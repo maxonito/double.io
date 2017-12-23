@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -142,6 +143,71 @@
 		</div>
 	</section>
   	<!-- \Фото -->
+
+  	<!-- Формы -->
+	<section class="forms">
+		<div class="container">
+			<div class="row">
+				<form class="forms-form" action="smart.php" method="POST">
+					<div class="col-md-4">
+						<input type="text" name="name" placeholder="Ваше имя">
+					</div>
+					<div class="col-md-4">
+						<input type="text" name="phone" placeholder="Ваше имя">
+					</div>
+					<div class="col-md-4">
+						<button class="but forms-btn">заказать</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+  	<!-- \Формы  -->
+
+  	<!-- Видосы -->
+	<section class="videos">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="videos-item">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/0XU0hIvDVmU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-4"  >
+					<div class="videos-item">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/0XU0hIvDVmU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="videos-item">
+						<iframe width="100%" height="315" src="https://www.youtube.com/embed/0XU0hIvDVmU?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  	<!-- \Видосы -->
+
+  	<!-- Отзывы -->
+  	<section class="feedback">
+  		<div class="container">
+  			
+  		</div>
+  	</section>
+
+  	<!-- \Отзывы -->
+
+  	<!-- Скрипты -->
+  	<script src="js/jquery.stellar.js"></script>
+
+  	<script>
+  		$(document).ready(function(){
+  			$('#main').stellar(
+  				horizontalOffset: 40,
+  				  verticalOffset: 150);
+  		});
+  		
+  	</script>
 	
 </body>
 </html>
