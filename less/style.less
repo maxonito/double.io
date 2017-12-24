@@ -18,7 +18,7 @@ section {
   padding: 4rem 0;
 }
 
-*:visited, *:active {
+*:visited, *:active, *:link, *:hover,*:focus {
   outline: none;
 }
 
@@ -55,29 +55,39 @@ section {
   list-style: none;
   text-align: center;
   padding-left: 0;
+  padding-bottom: 2rem;
 }
 .top-nav li {
   display: inline-block;
   text-align: center;
-  padding: 2rem;
 }
 .top-nav-item {
   color: #000000;
   font-size: 1.8rem;
   font-weight: bold;
 }
+.top-number {
+  position: absolute;
+  left: 25%;
+  font-size: 1.6rem;
+}
+
+.down {
+  position: relative;
+  height: 2rem;
+}
 
 .callback {
-  
-  padding-top: 3px;
+  width: 20rem;
   font-size: 1.6rem;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 1rem;
   font-weight: 700;
   border: none;
   border-radius: 15px ;
   text-transform: uppercase;
   z-index: 10;
   opacity: 1;
+  margin-bottom: 0.3rem;
 
 }
 
@@ -247,14 +257,18 @@ section {
 
 // Что входит в комплект
 .inbox {
+
+  .container-fluid {
+    padding: 0;
+  }
   h2 {
-    background: #fff url(../img/inbox/title.jpg) center no-repeat;
+    background-color: #b2b2b2;
     font-weight: 700;
     margin-bottom: 3rem;
     font-size: 5rem;
   }
 
-  &-block-1 {
+  &-block {
     height: 7rem;
     font-size: 3.6rem;
     line-height: 7rem;
@@ -262,51 +276,9 @@ section {
     color: @white;
     margin-bottom: 4rem;
     font-weight: 700;
-    background: #fff url(../img/inbox/1.jpg) center no-repeat;  
-  }
-
-  &-block-2 {
-    height: 7rem;
-    font-size: 3.6rem;
-    line-height: 7rem;
-    padding-left: 6rem;
-    color: @white;
-    margin-bottom: 4rem;
-    font-weight: 700;
-    background: #fff url(../img/inbox/2.jpg) center no-repeat;  
-  }
-
-  &-block-3 {
-    height: 7rem;
-    font-size: 3.6rem;
-    line-height: 7rem;
-    padding-left: 6rem;
-    color: @white;
-    margin-bottom: 4rem;
-    font-weight: 700;
-    background: #fff url(../img/inbox/3.jpg) center no-repeat;  
-  }
-
-  &-block-4 {
-    height: 7rem;
-    font-size: 3.6rem;
-    line-height: 7rem;
-    padding-left: 6rem;
-    color: @white;
-    margin-bottom: 4rem;
-    font-weight: 700;
-    background: #fff url(../img/inbox/4.jpg) center no-repeat;  
-  }
-
-  &-block-5 {
-    height: 7rem;
-    font-size: 3.6rem;
-    line-height: 7rem;
-    padding-left: 6rem;
-    color: @white;
-    margin-bottom: 4rem;
-    font-weight: 700;
-    background: #fff url(../img/inbox/5.jpg) center no-repeat;  
+    background-color: #b2b2b2; 
+    border-bottom-left-radius: 30px; 
+    border-top-left-radius: 30px;
   }
 
   &-img {
@@ -349,6 +321,10 @@ section {
 
 // Видосы
 .videos {
+  .title {
+    color: @black;
+    margin-bottom: 4rem;
+  }
   &-item {
     width: 100%;
     box-shadow: 0px 23px 7px 0px rgba(0, 0, 0, 0.35);
@@ -656,9 +632,6 @@ section {
 }
 .footer .number {
   font-size: 2rem;
-}
-.footer .btn-grey {
-  background-color: #e0e0e0;
 }
 .footer-btn {
   font-size: 1.6rem;
