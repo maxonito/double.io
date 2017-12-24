@@ -843,28 +843,10 @@
   		    e.stopImmediatePropagation();
   		    return false;
   		    });
+  		});
 
+     
 
-  		    // Ресет для форм и закрытие
-  		    $(document).ready(function() {
-    		$("#submit").submit(function() {
-      		var t = $(this);
-
-        	$('.modal').hide('slow', function() {
-        	
-       		 });
-
-        	return $.ajax({
-            type: "POST",
-            url: "smart.php",
-            data: t.serialize()
-       		 }).done(function() {
-            alert("Ваше сообщение отправлено! Скоро с Вами свяжутся!"), setTimeout(function() {
-                t.trigger("reset")
-            }, 1e3)
-        }), !1
-    })
-  	    });
   	    </script>
   	
 	

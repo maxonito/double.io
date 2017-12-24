@@ -257,6 +257,9 @@ section {
   width: 90%;
   padding: 2rem;
 }
+.videos {
+  padding-top: 0;
+}
 .videos .title {
   color: #000000;
   margin-bottom: 4rem;
