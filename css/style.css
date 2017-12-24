@@ -246,6 +246,9 @@ section {
   -webkit-box-shadow: 0px 23px 7px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 23px 7px 0px rgba(0, 0, 0, 0.35);
 }
+.forms {
+  padding-bottom: 1rem;
+}
 .forms-btn {
   width: 30rem;
 }
